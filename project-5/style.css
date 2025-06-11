@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+ 
+.container .image{
+  
+   width: 50%;
+   height: 100%;
+}
+
+.container .image img{
+    width: 100%;
+   
+}
+.container .image2 {
+    display: none;
+}
+
+    
+
+.container .content{
+    width: 50%;
+    
+    padding: 25px;
+    
+}
+.content h4{
+margin-bottom: 15px;
+font-weight: 400;
+font-size: 20px;
+}
+.content h1{
+ width:250px;
+ margin-bottom: 20px;
+ font-size: 35px;
+}
+.content p{
+    width: 250px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.content .price{
+    display: flex;
+    
+}
+.content .price h2{
+    font-size: 30px;
+    margin-right: 20px;
+    color: hsl(158, 36%, 37%);
+}
+.content del{
+    padding-top: 8px;
+}
+
+.content button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+}
+.content button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.content button:hover{
+    background-color: hsl(158, 42%, 18%);
+}
+.attribution{
+    position: absolute;
+    bottom: 1px;
+}
+
+
+
+
+
+@media screen and ( max-width: 450px ){
+   .container{
+    margin: 0 10px;
+   }
+   .container .image{
+   display: none;
+   }
+   
+   .container .image2 {
+    width: 100%;
+    display: block;
+   }
+   .container .image2 img{
+    width: 100%;
+    
+   
+   } 
+   
+   .container  {
+    display: inline;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .container .content{
+    width: 100%;
+   }
+   .content h4{
+    font-size: 15px;
+   }
+   .content h1{
+    
+    font-size: 27px;
+   }
+   .content button{
+    padding: 10px 0;
+   }
+   .attribution{
+    font-size: 10px;
+    bottom: 1px;
+}
+}
+
+
+
+
+
