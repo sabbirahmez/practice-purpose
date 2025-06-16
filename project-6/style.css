@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+
+}
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    color:white;
+    background-image: url(bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    width: 100%;
+    position: relative;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    padding: 30px;
+   
+    
+
+}
+
+header{
+position: absolute;
+top: 20px;
+left: 220px;
+
+
+
+}
+
+.container .image{
+    width: 40%;
+    
+    margin-right: 40px;
+}
+.container .image img{
+    width: 100%
+}
+
+.content{
+   
+   width: 40%;
+    
+   
+}
+.content h3{
+    font-size:35px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.content p{
+   width: 90%;
+    margin-bottom: 20px;
+}
+.content button{
+    padding: 12px 50px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 1.2px 0.7px 0.6px;
+}
+.content button a{
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+}
+.content .icon{
+    position: absolute;
+    bottom: 10px;
+    right: 220px;
+    
+    
+}
+.content .icon a{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+   
+}
+.content .icon i{
+    padding: 7px 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.content .icon a i:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+.content button:hover{
+background: hsl(300, 69%, 71%);
+}
+.content button:hover a{
+color: hsl(300, 25%, 98%);
+}
+
+footer{
+    position: absolute;
+    bottom: 1px;
+   
+}
+
+
+
+    
