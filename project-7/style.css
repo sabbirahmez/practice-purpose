@@ -9,16 +9,21 @@
 
 body{
     background: hsl(216, 15%, 48%);
-    
     width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
    
     
 
 }
 .container{
     
-    margin: auto;
-    margin-top: 20px;
+   
+    
     width: 400px;
     padding: 20px;
     background-color: white;
@@ -51,6 +56,8 @@ width: 100%;
 text-align: center;
 font-size: 13px;
 }
+
+
 
 
 
