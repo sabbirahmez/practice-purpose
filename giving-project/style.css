@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500, 600;
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 12%);
+}
+.content {
+  display: flex;
+  background: hsl(0, 0%, 12%);
+  background-color: hsl(0, 0%, 8%);
+  width: 80%;
+
+  justify-content: center;
+  border-radius: 10px;
+  padding: 50px;
+}
+.content h5 {
+  margin-top: 5px;
+  font-weight: 400;
+}
+.content .box1 {
+  width: 200px;
+  height: 200px;
+  background: rgb(105, 43, 204);
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: start;
+}
+.box1 h1 {
+  font-size: 50px;
+}
+.content .box2 {
+  display: flex;
+  width: 400px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.box2 .views {
+  display: flex;
+  margin-right: 50px;
+}
+.box2 i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: rgb(105, 43, 204);
+}
+.box2 .visitors {
+  display: flex;
+}
+.box2 h3 {
+  font-size: 20px;
+}
+.content .box3 {
+  width: 200px;
+}
+.box3 button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(111, 45, 216);
+  border-radius: 15px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+.box3 p {
+  font-size: 12px;
+  color: hsl(0, 0%, 57%);
+}
+.box3 p span {
+  color: hsl(0, 0%, 65%);
+}
+.box3 button:hover {
+  background-color: rgb(84, 12, 201);
+}
