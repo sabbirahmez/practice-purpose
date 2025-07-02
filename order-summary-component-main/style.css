@@ -102,3 +102,8 @@ body {
   font-weight: bold;
   color: var(--DarkBlue);
 }
+.attribution{
+  position: absolute;
+  bottom: 10px;
+  
+}
