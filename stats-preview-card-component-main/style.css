@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 700;
+  font-style: normal;
+}
+:root {
+  --VeryDarkBlue: hsl(233, 47%, 7%);
+  --DarkDesaturatedBlue: hsl(244, 38%, 16%);
+  --SoftViolet: hsl(277, 64%, 61%);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--VeryDarkBlue);
+}
+.box {
+  display: flex;
+  width: 800px;
+  height: 330px;
+  align-items: center;
+  background: var(--DarkDesaturatedBlue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.content {
+  width: 400px;
+  align-items: center;
+
+  padding: 40px;
+}
+.content .h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+}
+.h1 span {
+  color: var(--SoftViolet);
+}
+.content p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.content .pro {
+  display: flex;
+}
+.pro .queries {
+  width: 80px;
+  margin-right: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.queries h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+.queries p {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.image {
+  width: 400px;
+  height: 100%;
+  background: var(--SoftViolet);
+  accent-color: var(--SoftViolet);
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+}
