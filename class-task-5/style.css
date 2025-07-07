@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  background-image: url(images/1300x650-x1.5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header nav {
+  display: flex;
+  height: 115px;
+  /* background: #000; */
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+.logo img {
+  width: 100%;
+  height: 112px;
+}
+nav .items ul {
+  display: flex;
+  list-style: none;
+}
+.items ul li {
+  margin-right: 58px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+/* .content{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    
+} */
+.text {
+  margin-left: 240px;
+  margin-top: 30px;
+  width: 700px;
+  color: rgb(15, 15, 161);
+  font-family: Arial;
+}
+.text h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+.text h1 {
+  font-size: 110px;
+  letter-spacing: 3px;
+  line-height: 110px;
+}
+.button {
+  margin-top: 20px;
+}
+.text .btn1 {
+  padding: 10px 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 2px solid rgb(15, 15, 161);
+  background: rgb(15, 15, 161);
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+.text .btn2 {
+  border-radius: 50px;
+  border: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 10px 40px;
+  background: #ebebeb;
+  border: 2px solid #e7e7e7;
+  transition: all 0.3s ease;
+}
+.btn1:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: rgb(15, 15, 161);
+}
+.btn2:hover {
+  transform: scale(1.1);
+  background-color: rgb(15, 15, 161);
+  color: white;
+}
