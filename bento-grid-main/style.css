@@ -1,0 +1,220 @@
+:root {
+  --Purple100: hsl(254, 88%, 90%);
+  --Purple500: hsl(256, 67%, 59%);
+  --Yellow100: hsl(31, 66%, 93%);
+  --Yellow500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dddddd;
+}
+img {
+  width: 150px;
+}
+
+p {
+  font-size: 18px;
+}
+h2,
+h3,
+h4 {
+  font-size: 25px;
+}
+.content {
+  padding: 25px;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight";
+
+  @media (width> 600px) {
+    display: grid;
+    justify-content: center;
+    width: 700px;
+
+    grid-template-areas:
+      "seven one one "
+      "seven three four "
+      "eight three four"
+      "eight two four"
+      "six five five";
+  }
+
+  @media (width> 960px) {
+    display: grid;
+    justify-content: center;
+    width: 700px;
+
+    grid-template-areas:
+      "seven one one four"
+      "seven two three four"
+      "eight two three four"
+      "eight six five five";
+  }
+}
+.content div {
+  border-radius: 10px;
+  padding: 15px;
+}
+.content > :nth-child(1) {
+  grid-area: one;
+
+  background-color: var(--Purple500);
+  text-align: center;
+  color: var(--White);
+  font-size: 22px;
+  .color-design {
+    color: var(--Yellow500);
+  }
+  .italic-design {
+    font-style: italic;
+  }
+  img {
+    width: 200px;
+  }
+  @media (width> 800px) {
+    img {
+      width: 250px;
+    }
+  }
+}
+
+.content > :nth-child(2) {
+  background-color: var(--White);
+  font-size: 16px;
+  img {
+    width: 400px;
+    border-radius: 50px;
+    box-shadow: 0 10px 15px #f3f3f3;
+  }
+
+  grid-area: two;
+
+  @media (width> 800px) {
+    overflow: clip;
+    img {
+      width: 250px;
+      padding-top: 15px;
+      margin-right: -60px;
+    }
+  }
+}
+.content > :nth-child(3) {
+  background-color: var(--Yellow500);
+
+  overflow: clip;
+
+  img {
+    margin-bottom: -40px;
+  }
+
+  grid-area: three;
+
+  @media (width> 800px) {
+    img {
+      width: 200px;
+      margin-bottom: -100px;
+    }
+  }
+}
+.content > :nth-child(4) {
+  background-color: var(--Purple100);
+  text-align: center;
+
+  img {
+    width: 220px;
+  }
+
+  grid-area: four;
+
+  @media (width> 800px) {
+    overflow: clip;
+    img {
+      width: 400px;
+      margin-right: -160px;
+    }
+  }
+}
+.content > :nth-child(5) {
+  background-color: var(--Purple500);
+  text-align: center;
+
+  color: var(--White);
+  img {
+    margin-top: 30px;
+  }
+
+  grid-area: five;
+
+  @media (width> 800px) {
+    h2 {
+      font-size: 30px;
+      text-align: start;
+    }
+    align-items: center;
+    display: flex;
+
+    img {
+      width: 250px;
+    }
+  }
+}
+.content > :nth-child(6) {
+  background-color: var(--White);
+  h1 {
+    font-size: 40px;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+
+  grid-area: six;
+}
+.content > :nth-child(7) {
+  background-color: var(--Yellow100);
+  img {
+    margin-bottom: 20px;
+  }
+  span {
+    color: var(--Purple500);
+  }
+
+  grid-area: seven;
+
+  @media (width> 800px) {
+    padding-top: 100px;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.content > :nth-child(8) {
+  background-color: var(--Yellow500);
+  padding-top: 30px;
+  grid-area: eight;
+
+  @media (width> 800px) {
+    img {
+      width: 200px;
+    }
+  }
+}
