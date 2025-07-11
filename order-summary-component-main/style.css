@@ -9,6 +9,12 @@
   --DarkBlue: hsl(223, 47%, 23%);
   --PaleBlue: hsl(225, 100%, 94%);
   --BrightBlue: hsl(245, 75%, 52%);
+  
+
+
+
+
+
 }
 
 html,
@@ -20,53 +26,89 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--PaleBlue);
-  background-image: url(pattern-background-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image : url(images/pattern-background-mobile.svg);
+  
+  background-position: 100%;
+   background-size: cover;
 
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight:500, 700, 900;
   font-style: normal;
+ 
+  
+@media (width>630px) {
+    background-image: none;
+     background-image: url(images/pattern-background-desktop.svg);
+  background-position: 100%;
+ 
+  background-size: cover;
+   
+  }
+  
 }
 .box {
-  width: 400px;
+  width: 350px;
   background-color: var(--VeryPaleBlue);
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 10px 15px #bebebe;
+
+  @media (width>630px) {
+    width: 400px;
+  }
 }
 .image img {
   width: 100%;
 }
 .content {
-  margin: 40px;
+  
+  padding: 35px;
   text-align: center;
 }
 .content h1 {
+  font-size: 25px;
+   font-weight: bold; 
   margin-bottom: 10px;
-}
-.content h4 {
-  margin-bottom: -20px;
 }
 .content p {
   font-size: 16px;
   color: var(--DesaturatedBlue);
   margin-bottom: 10px;
 }
+
 .price {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
+  align-items: center; 
+  justify-content: center; 
+  margin: 25px 0;
+
+ 
 }
-.price .image1 {
-  margin-right: 15px;
+.price img {
+  width: 50px;
+  height: 50px;
+  margin-right: 17px;
+ @media (width>630px){
+  margin-right: 26px;
+ }
+ 
 }
 .price .plan {
-  margin-right: 70px;
+  
+  margin-right: 50px;
+    margin-top:10px;
+
+   @media (width>630px){
+   margin-right: 80px; 
+ }
 }
 .price a {
-  padding-bottom: 15px;
+ 
   font-weight: bold;
   font-size: 14px;
   color: var(--BrightBlue);
@@ -77,9 +119,10 @@ body {
 }
 .button button {
   width: 100%;
-  height: 45px;
+  height: 50px;
   border-radius: 10px;
   border: none;
+  box-shadow: 0 6px 10px #b3b3b3;
   background-color: var(--BrightBlue);
   margin-bottom: 20px;
 }
@@ -105,5 +148,8 @@ body {
 .attribution{
   position: absolute;
   bottom: 10px;
-  
+  font-size: 13px;
+  @media (width>630px){
+  font-size: 16px;
+ }
 }
