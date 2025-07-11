@@ -38,7 +38,7 @@ mix-blend-mode: multiply;
 }
 }
 body {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   
   justify-content: center;
