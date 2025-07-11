@@ -14,15 +14,13 @@ body {
 
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 400,500;
   font-style: normal;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center;  */
   background: #dddddd;
-}
-img {
-  width: 150px;
+  padding: 40px;
 }
 
 p {
@@ -31,13 +29,18 @@ p {
 h2,
 h3,
 h4 {
-  font-size: 25px;
+  font-size: 23px;
+
+  @media (width> 800px){
+    font-size: 30px;
+    line-height: 25px;
+  }
 }
 .content {
-  padding: 25px;
+  
   display: grid;
-  justify-content: center;
-  gap: 20px;
+ 
+   gap: 20px;
   grid-template-areas:
     "one"
     "two"
@@ -48,10 +51,10 @@ h4 {
     "seven"
     "eight";
 
-  @media (width> 600px) {
+  @media (width> 630px) {
     display: grid;
     justify-content: center;
-    width: 700px;
+    width: 700px; 
 
     grid-template-areas:
       "seven one one "
@@ -61,10 +64,10 @@ h4 {
       "six five five";
   }
 
-  @media (width> 960px) {
+  @media (width> 800px) {
     display: grid;
     justify-content: center;
-    width: 700px;
+    
 
     grid-template-areas:
       "seven one one four"
@@ -75,15 +78,16 @@ h4 {
 }
 .content div {
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
+
 }
 .content > :nth-child(1) {
   grid-area: one;
-
   background-color: var(--Purple500);
   text-align: center;
   color: var(--White);
-  font-size: 22px;
+  font-size: 24px;
+ line-height: 45px;
   .color-design {
     color: var(--Yellow500);
   }
@@ -92,10 +96,14 @@ h4 {
   }
   img {
     width: 200px;
+    margin: -25px 0;
   }
   @media (width> 800px) {
     img {
       width: 250px;
+    }
+    h1{
+      font-size: 35px;
     }
   }
 }
@@ -103,20 +111,28 @@ h4 {
 .content > :nth-child(2) {
   background-color: var(--White);
   font-size: 16px;
+  overflow: clip;
+  display: flex;
+  flex-direction: column-reverse;
+  
   img {
-    width: 400px;
+    width: 300px;
     border-radius: 50px;
-    box-shadow: 0 10px 15px #f3f3f3;
+    box-shadow: 0 8px 15px #f3f3f3;
+
+    
   }
 
   grid-area: two;
 
   @media (width> 800px) {
     overflow: clip;
+   
     img {
-      width: 250px;
-      padding-top: 15px;
-      margin-right: -60px;
+      
+    
+      margin-right: -125px;
+      
     }
   }
 }
@@ -126,7 +142,8 @@ h4 {
   overflow: clip;
 
   img {
-    margin-bottom: -40px;
+    margin-bottom: -27px;
+    width: 200px;
   }
 
   grid-area: three;
@@ -143,7 +160,7 @@ h4 {
   text-align: center;
 
   img {
-    width: 220px;
+    width: 300px;
   }
 
   grid-area: four;
@@ -152,7 +169,10 @@ h4 {
     overflow: clip;
     img {
       width: 400px;
-      margin-right: -160px;
+      margin-right: -170px;
+    }
+    p{
+      text-align: start;
     }
   }
 }
@@ -161,8 +181,16 @@ h4 {
   text-align: center;
 
   color: var(--White);
+ h2{
+  padding:0 50px ;
+
+  @media (width> 800px){
+    padding: 0;
+  }
+ }
   img {
-    margin-top: 30px;
+    width: 200px;
+    margin-top: 10px;
   }
 
   grid-area: five;
@@ -184,16 +212,30 @@ h4 {
   background-color: var(--White);
   h1 {
     font-size: 40px;
+    margin: -5px 0;
   }
   img {
-    margin-bottom: 20px;
+    width: 200px;
+   
   }
 
   grid-area: six;
+
+  @media (width> 800px){
+    img{
+      margin-top: 40px;
+    }
+    
+    h1{
+      font-size: 60px;
+    }
+  }
+
 }
 .content > :nth-child(7) {
   background-color: var(--Yellow100);
   img {
+    width: 200px;
     margin-bottom: 20px;
   }
   span {
@@ -215,6 +257,10 @@ h4 {
   background-color: var(--Yellow500);
   padding-top: 30px;
   grid-area: eight;
+  img{
+    width: 200px;
+  }
+  
 
   @media (width> 800px) {
     img {
@@ -225,6 +271,10 @@ h4 {
 
 .attribution{
   position: absolute;
-  font-size: 14px;
+  font-size: 12px;
   bottom: 1px;
+
+  @media (width> 800px){
+    font-size: 18px;
+  }
 }
