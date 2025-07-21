@@ -6,7 +6,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 ### Screenshot
 
 ![screenshot](<Screenshot 2025-07-21 230743.png>)
-(<Screenshot 2025-07-21 231333.png>)
+![screenshot](<Screenshot 2025-07-21 231333.png>)
 
 ### Links
 
