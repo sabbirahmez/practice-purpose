@@ -7,7 +7,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
-![screenshot](stats-preview-card-component/design/desktop-design.jpg)
+![screenshot](<Screenshot 2025-07-21 232029.png>) ![screenshot](<Screenshot 2025-07-21 232047.png>)
 
 ### Links
 
