@@ -5,7 +5,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Screenshot
 
-![screenshot](huddle-landing-page/preview.jpg)
+![screenshot](<Screenshot 2025-07-21 230743.png>)
 
 ### Links
 
