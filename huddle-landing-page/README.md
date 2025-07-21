@@ -9,7 +9,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Solution URL: [https://github.com/sabbirahmez/practice-purpose/tree/main/huddle-landing-page-with-single-introductory-section-master]
+- Solution URL: [https://github.com/sabbirahmez/practice-purpose/tree/main/huddle-landing-page]
 
 - Live Site URL: [https://practice-purpose-huddle-landing-pag.vercel.app/]
 

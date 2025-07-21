@@ -8,7 +8,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [https://github.com/sabbirahmez/practice-purpose/tree/main/order-summary-component-main]
+- Solution URL: [https://github.com/sabbirahmez/practice-purpose/tree/main/order-summary-component]
 
 - Live Site URL: [https://practice-purpose-order-summary-comp.vercel.app/]
 
