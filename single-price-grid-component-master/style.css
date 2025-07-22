@@ -20,7 +20,7 @@
 
 body {
   padding: 30px;
-
+position: relative;
   @media (width>600px) {
     display: flex;
     align-items: center;
@@ -116,4 +116,14 @@ h2 {
   @media (width<600px) {
    border-bottom-left-radius: 10px;
   }
+}
+footer{
+  position: absolute;
+  bottom: 1px;
+  font-size: 12px;
+text-align: center;
+@media (width>600px) {
+   font-size: 17px;
+  }
+ 
 }
