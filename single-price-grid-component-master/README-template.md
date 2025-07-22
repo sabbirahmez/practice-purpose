@@ -11,8 +11,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/sabbirahmez/practice-purpose/tree/main/single-price-grid-component-master]
+- Live Site URL: [https://practice-purpose-single-price-grid.vercel.app/]
 
 ## My process
 
