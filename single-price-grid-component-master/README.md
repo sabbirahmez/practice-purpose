@@ -4,8 +4,9 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 
 ### Screenshot
-<video controls src="screenvideo.mp4" title="screenvideo"></video>
 
+![screenshot](<Screenshot 2025-07-23 004141.png>)
+![screenshot](single-price-grid-component-master/screenvideo.mp4)
 
 
 
