@@ -7,159 +7,148 @@
   font-style: normal;
 }
 
-:root{
---Purple700: hsl(257, 40%, 49%);
---Magenta400: hsl(300, 69%, 71%);
-
+:root {
+  --Purple700: hsl(257, 40%, 49%);
+  --Magenta400: hsl(300, 69%, 71%);
 }
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
   display: flex;
   justify-content: center;
- padding: 25px;
+  padding:40px;
   color: white;
   background-image: url(images/bg-mobile.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--Purple700);
- 
+
   position: relative;
 
-
-     @media (width>800px) {
-  
-  padding: 50px;
-   }
+  @media (width>800px) {
+    padding: 50px;
+  }
 }
 
-.huddle-landing-page{
-   
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-    
+.huddle-landing-page {
+   padding: px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-header{
-   margin-bottom: 15px;
-    
-    img{
-        width: 100px;
-           @media (width>800px) {
-   width: 15%;
-   }
+header {
+  margin-bottom: 15px;
+
+  img {
+    width: 100px;
+    @media (width>800px) {
+      width: 15%;
     }
+  }
 
-       @media (width>800px) {
-   
-   margin-bottom:39px;
-   }
+  @media (width>800px) {
+    margin-bottom: 39px;
+  }
 }
- .illustration-mockups{@media (width>800px) {
-  width: 60%;
-   }}
-.illustration-mockups img{
-    width: 350px;
-    margin-bottom:15px ;
+.illustration-mockups {
+  @media (width>800px) {
+    width: 60%;
+  }
+}
+.illustration-mockups img {
+  width: 350px;
+  margin-bottom: 15px;
 
-       @media (width>800px) {
-   width: 100%;
-   }
-  
+  @media (width>800px) {
+    width: 100%;
+  }
 }
-.huddle-content{
-    display: flex;
-    flex-direction: column;
+.huddle-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-   @media (width>800px) {
+  @media (width>800px) {
     flex-direction: row;
     gap: 50px;
-    
-   }
-    
+  }
 }
-.content{
-    width: 300px;
-text-align: center;
-h4{
+.content {
+  width: 300px;
+  text-align: center;
+  h4 {
     font-size: 25px;
     margin-bottom: 10px;
-    @media (width>800px){
-        font-size: 40px;
-        width: 500px;
+    @media (width>800px) {
+      font-size: 40px;
+      width: 500px;
     }
-}
-p{
-  margin-bottom: 10px;
-    
-    line-height: 25px;
+  }
+  p {
+    margin-bottom: 10px;
 
-    @media (width>800px){
-        
-        width: 500px;
+    line-height: 20px;
+
+    @media (width>800px) {
+      width: 500px;
     }
-}
+  }
 
-button{
-   width: 70%; 
-   height: 40px;
-   margin-bottom: 30px;
-   background-color: white;
-   border: none;
-   border-radius: 50px;
-   box-shadow: 0 7px 13px #3f3f3f ;
-   a{
-    color: var(--Purple700);
-    font-size: 15px;
-    text-decoration: none;
-   }
-     @media (width>800px) {
-   width: 30%;
-   }
+  button {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 7px 13px #3f3f3f;
+    a {
+      color: var(--Purple700);
+      font-size: 15px;
+      text-decoration: none;
+    }
+    @media (width>800px) {
+      width: 30%;
+    }
+  }
 
-    
-}
+  button:hover {
+    background: var(--Magenta400);
 
-button:hover{
-    background:var(--Magenta400);
-
-   a{color: white;} 
-}
+    a {
+      color: white;
+    }
+  }
   @media (width>800px) {
-   width:40%;
+    width: 40%;
 
-   text-align: start;
-   }
+    text-align: start;
+  }
 }
-footer{
-    display: flex;
-    
-    justify-content: center;
+footer {
+  display: flex;
 
-      @media (width>800px) {
-   position: absolute;
-   right:100px;
-   bottom: 100px;
-   }
+  justify-content: center;
+
+  @media (width>800px) {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+  }
 }
-.icon i{
-   margin-right:10px;
-    width: 35px;
-    height: 35px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding-top: 8px;
-    padding-left: 9px;
+.icon i {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding-top: 8px;
+  padding-left: 9px;
 }
-.icon i:hover{
-   border-color: var(--Magenta400);
-    color: var(--Magenta400);
+.icon i:hover {
+  border-color: var(--Magenta400);
+  color: var(--Magenta400);
 }
-
-
-
-

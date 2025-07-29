@@ -1,0 +1,141 @@
+:root {
+  /* ### Primary */
+
+  --Green500: hsl(158, 36%, 37%);
+  --Green700: hsl(158, 42%, 18%);
+
+  /* ### Neutral */
+
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Cream);
+
+  /* font family */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500, 700;
+  font-style: normal;
+}
+
+main {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  width: 390px;
+  flex-direction: column;
+
+  @media (width>490px) {
+    display: flex;
+
+    width: 570px;
+
+    flex-direction: row;
+  }
+}
+
+main .img-product2 {
+  align-items: center;
+  display: none;
+  @media (width>490px) {
+    display: block;
+    width: 50%;
+
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}
+
+main .img-product {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  @media (width>490px) {
+    display: none;
+  }
+}
+main .content {
+  P {
+    font-size: 14px;
+    color: var(--Grey);
+  }
+  padding: 25px;
+  background-color: var(--White);
+  border-end-start-radius: 10px;
+  border-end-end-radius: 10px;
+
+  @media (width>490px) {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+}
+.content .p {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.content h2 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.content .Product-about {
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+.price {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  h2 {
+    color: var(--Green500);
+  }
+
+  p {
+    padding-top: 10px;
+  }
+}
+
+main button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--Green500);
+  border: none;
+  border-radius: 10px;
+  color: var(--White);
+  font-weight: bold;
+}
+main button:hover {
+  background: var(--Green700);
+}
+.attribution {
+  position: absolute;
+  bottom: -15px;
+  font-size: 13px;
+}
