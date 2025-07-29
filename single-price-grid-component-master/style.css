@@ -17,10 +17,14 @@
   --Gray500: hsl(218, 22%, 67%);
 }
 
+html,
+body {
+  height: 100%;
+}
 
 body {
-  padding: 30px;
-position: relative;
+  
+
   @media (width>600px) {
     display: flex;
     align-items: center;
@@ -33,6 +37,11 @@ h2 {
 }
 
 .single-price-grid {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   @media (width>600px) {
     display: grid;
 
@@ -100,30 +109,26 @@ h2 {
 .single-price-grid > :nth-child(3) {
   border-bottom-right-radius: 10px;
 
-
   h2 {
     color: var(--Teal100);
   }
   p {
     color: #dfdfdf;
-    line-height: 22.4px;
+    line-height: 22.55px;
   }
   background: hsl(179, 64%, 48%);
 
-
-
-
   @media (width<600px) {
-   border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
-footer{
+footer {
   position: absolute;
-  bottom: 1px;
+  bottom: -50px;
+width: 100%;
   font-size: 12px;
-text-align: center;
-@media (width>600px) {
-   font-size: 17px;
+P{ text-align: center;}
+  @media (width>600px) {
+    font-size: 17px;
   }
- 
 }
