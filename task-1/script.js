@@ -12,9 +12,10 @@
         slidbar.style.right ="0%"
         turn = false;
       }else{
-       slidbar.style.right ="-65%"
+       slidbar.style.right ="-100%"
        turn = true;
       }
+      
 
    })
    menu2.addEventListener("click",()=>{
